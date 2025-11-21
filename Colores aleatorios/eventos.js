@@ -1,5 +1,6 @@
 const boton = document.querySelector('button');
 const color = document.getElementById('color');
+const divArriba = document.getElementById('div-arriva');
 
 function generarColorHexadecimal() {
     let digitos = '0123456789ABCDEF';
@@ -12,6 +13,9 @@ function generarColorHexadecimal() {
 }
 boton.addEventListener('click', function() {
     let colorAleatorio = generarColorHexadecimal();
+    let colorAnterior = document.body.style.backgroundColor;
+    
     color.textContent = colorAleatorio;
+    divArriba.style.backgroundColor = colorAnterior;
     document.body.style.backgroundColor = colorAleatorio;
 })

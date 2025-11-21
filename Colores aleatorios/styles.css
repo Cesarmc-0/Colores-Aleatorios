@@ -10,11 +10,12 @@
     background-color: #2B807B;
     transition: background-color 0.5s ease;
     text-align: center;
+    flex-direction: column;
 }
 
 .centrar-flex{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     /* flex-direction: column;
     height: 100vh;
@@ -27,6 +28,10 @@
     border: 5px solid rgb(0, 0, 0);
     flex-wrap: wrap;
     flex-direction: column;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 #color{
@@ -50,4 +55,10 @@ button{
 button:hover{
     background-color: #05455A;
  
+}
+#div-arriva{
+    margin-bottom: 20px;
+    background-color: red;
+    height: 50vh;
+    width: 100%;
 }
